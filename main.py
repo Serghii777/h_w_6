@@ -3,6 +3,7 @@ import shutil
 import sys
 import file_parser
 from normalize import normalize
+
 def handle_media(file_name: Path, target_folder: Path):
     target_folder.mkdir(exist_ok=True, parents=True)
     file_name.replace(target_folder / normalize(file_name.name))

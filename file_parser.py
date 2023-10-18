@@ -57,7 +57,7 @@ def get_extension(name: str) -> str:
 
 def scan(folder: Path):
     for item in folder.iterdir():
-        # Робота з папкою
+        
         if item.is_dir():  # перевіряємо чи обєкт папка
             if item.name not in ('archives', 'video', 'audio', 'documents', 'images', 'MY_OTHER'):
                 FOLDERS.append(item)
